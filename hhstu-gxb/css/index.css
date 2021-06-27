@@ -1,0 +1,374 @@
+/* 侧边栏 */
+
+.aside {
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #007bff;
+}
+
+.aside span {
+    line-height: 36px;
+    font-size: 34px;
+    color: #EAFFD0;
+}
+
+
+/* 轮播图 */
+
+.focus {
+    width: 100%;
+    height: 499px;
+    background: url(../img/banner-bg.png);
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.carousel-inner .item>span {
+    display: block;
+    width: 100%;
+    height: 499px;
+}
+
+
+/* .carousel,
+.carousel img {
+    width: 100%;
+    height: 100%!important;
+} */
+
+.focus ol li {
+    margin-left: 15px;
+    width: 30px;
+}
+
+.carousel-caption a,
+.carousel-caption span {
+    float: left;
+    font-size: 30px;
+    color: #fff;
+}
+
+.carousel-indicators .active {
+    width: 30px;
+}
+
+
+/* 新闻模块 */
+
+.title {
+    height: 80px;
+    border-bottom: 3px solid #007bff;
+}
+
+.title h3 {
+    font-family: 'microsoft yahei';
+    padding-left: 30px;
+    font-size: 30px;
+    color: #2a2e2e;
+    font-weight: 700;
+}
+
+.title .more {
+    text-align: right;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #5F6464;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+
+.title .more:hover {
+    color: #007bff;
+}
+
+
+/* 新闻pic内容模板 */
+
+.news_silder {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.news_silder img {
+    width: 100%;
+    transition: all .5s;
+}
+
+.news_silder img:hover {
+    transform: scale(1.1);
+}
+
+.news_silder .list_box .titles {
+    margin-top: 15px;
+    border: 0;
+    font-size: 20px;
+    color: #2A2E2E;
+    letter-spacing: 0;
+    width: 100%;
+}
+
+.news_silder .list_box .titles:hover {
+    color: #007bff;
+}
+
+.news_silder .list_box .desc {
+    text-indent: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.news_silder .list_box .data {
+    margin: 20px 0 0 10px;
+    font-size: 16px;
+    color: #919797;
+    letter-spacing: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* 纯文本新闻 */
+
+.news .article {
+    margin-top: 20px;
+    border-top: 1px solid #007bff;
+}
+
+.article li:hover {
+    background-color: #fff;
+}
+
+.article li {
+    padding: 0 40px!important;
+}
+
+.article .news_time h3 a {
+    font-size: 18px;
+    color: #003F88;
+    font-weight: 700;
+    border-bottom: 1px solid #003F88;
+    padding-bottom: 5px;
+}
+
+.article .news_time h3:nth-child(1) {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.article .news_time h3 span {
+    font-size: 14px;
+    color: #333;
+}
+
+.article .news_tit a {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #333;
+    text-align: center;
+    font-family: 'microsoft yahei';
+}
+
+.article .news_cont a {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    line-height: 27px;
+    text-indent: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.article .news_more {
+    margin-top: 10px;
+}
+
+.article .news_more .go span {
+    font-size: 18px;
+}
+
+
+/* 师资团队模块 */
+
+.team {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+}
+
+.team .teachers ul li .main_pic {
+    width: 100%;
+}
+
+.main_pic img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team #main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team .main_bot h2 {
+    font-size: 24px;
+    color: #1b1b1b;
+    font-weight: bold;
+    padding: 0 11px 0 20px;
+}
+
+.main_bot h2 span,
+.main_mask h2 span {
+    font-size: 18px;
+    color: #909090;
+    font-weight: 100;
+    padding-left: 12px;
+}
+
+.main_bot h3 {
+    color: #919191;
+    height: 24px;
+    margin: 0;
+    padding: 0 11px 11px 5px;
+}
+
+.main_bot h3 span {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 6px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px #e5e8f3 solid;
+    border-radius: 11px;
+    margin-left: 16px;
+}
+
+.main_bot p {
+    font-size: 12px;
+    color: #8c8c8c;
+    text-align: center;
+    padding: 8px 8px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main_mask {
+    display: none;
+    background: rgba(66, 66, 66, .93);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    /* top: 550px; */
+    top: 0;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+}
+
+.main_mask h3 {
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    margin: 10px auto;
+    border-bottom: 1px solid #fff;
+}
+
+.main_mask p {
+    font-size: 16px;
+    line-height: 32px;
+    padding: 5px 30px;
+    color: #d6d6d6;
+}
+
+
+/* 科研成果模块 */
+
+.research {
+    /* border-bottom: 3px solid #007bff; */
+    background-color: #f5f5f5;
+}
+
+.research_cont {
+    margin-top: 10px;
+}
+
+.research_cont li:hover {
+    background-color: #fff;
+}
+
+.research_cont .time {
+    padding: 0;
+    margin: 0!important;
+    width: 76px;
+    height: 72px;
+    margin-right: 10px;
+    background: url(../img/icon.png) no-repeat center;
+    text-align: center;
+}
+
+.time p {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.time h5 {
+    margin-top: 4px;
+    font-size: 30px;
+    color: #000;
+}
+
+.research_cont .tit {
+    padding: 0;
+}
+
+.research_cont .tit a {
+    padding-top: 5px;
+    dispasiy: block;
+    font-size: 16px;
+    line-height: 29px;
+    color: #333;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.detail {
+    padding: 0 5px 20px 15px;
+}
+
+.detail .contant {
+    height: 26px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.detail .contant span {
+    font-size: 14px;
+    color: #666;
+}
+
+.contant .glyphicon {
+    margin-right: 15px;
+}

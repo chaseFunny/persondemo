@@ -1,0 +1,116 @@
+*{
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+
+}	
+.bigbox{
+	width: 100%;
+	height: 800px;
+	position: relative;
+	background-image: url(../img/tencent/14.png);
+}
+/*通用样式*/
+.left{
+float: left;
+}
+.right{
+float: right;
+}
+/*导航栏*/
+.nav{
+height: 60px;
+width: 1200px;
+z-index: 2;
+/*background-color: seagreen;*/
+margin: 0 auto;
+}
+.nav .right  a{
+/*background-color: sandybrown;*/
+font-size: 16px;
+line-height: 60px;
+color: lightgray;
+margin-right: 20px;
+}
+.nav .right  a:hover{
+	color: white;
+}
+/*视频，音频*/
+.bigbox video{
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	display: none;
+}
+.bigbox video:target{
+	display: block;
+}
+/*主界面*/
+.main{
+	width: 724px;
+	height: 500px;
+	margin: 140px auto;
+	position: relative;
+	z-index: 2;
+/*	background-color: seagreen;*/
+}
+.mainimage img{
+	width: 90px;
+	height: 90px;
+}
+.main .maintitle{
+	position: absolute;
+	bottom: 30px;
+	left: 300px;
+	z-index: 2;
+}
+.main .maintitle li a{
+	width: 50px;
+	height: 5px;
+	display: inline-block;
+	background-color: darkgray;
+}
+.main .maintitle li a:hover{
+	background-color: lightgray;
+}
+.main .maintitle li{
+	display: inline-block;
+}
+.main .mainimage{
+	display: none;
+}
+.main .mainimage:target{
+	display: block;
+}
+ .main .zuo{
+	height: 90px;
+	width: 90px;
+	margin: 50px auto;
+/*	background-color: silver;*/
+}
+.main .you p{
+	font-size: 18px;
+	/*background-color: silver;*/
+	margin: 150px auto;
+	color: white;
+	font-weight: lighter;
+	text-align: center;
+}
+@keyframes mainbac{
+	0%{background-image: url(../img/top/1.PNG);}
+	25%{background-image: url(../img/top/2.PNG);}
+	50%{background-image: url(../img/top/3.PNG);}
+	100%{background-image: url(../img/top/4.PNG);}
+}
+/*.dowm{
+	width: 100%;
+	height: 700px;
+	margin: 0 auto;
+	animation: mainbac 16s linear infinite;
+	background-size: cover;
+
+}*/
+

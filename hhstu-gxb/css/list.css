@@ -1,0 +1,192 @@
+/* banner */
+
+.banner_list {
+    width: 100%;
+    height: 272px;
+    background-image: url(../updata/sbanner2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 左侧部分 */
+
+.list_lf>span {
+    display: block;
+    padding: 23.5px 0;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.aside {
+    width: 100%;
+    margin: 50px auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+.aside li {
+    width: 100%;
+    background-color: #fff;
+}
+
+.aside li:nth-child(1) {
+    color: #fff;
+}
+
+.aside .asidecon a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.aside .asidenav {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.aside li:hover {
+    color: #007bff;
+    background-color: #ccc;
+}
+
+.aside li:nth-child(1):hover {
+    color: #fff;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact .asidecon {
+    display: block;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    color: black;
+    background-color: #fff;
+}
+
+.contact .asidecon a {
+    display: inline-block;
+}
+
+
+/* 右侧部分 */
+
+.contant_nav {
+    margin-top: 30px;
+    border-bottom: 1px solid #007bff;
+}
+
+.contant_nav li {
+    font-size: 14px;
+}
+
+.contant_nav ol {
+    margin-bottom: 0;
+}
+
+.contant_nav span {
+    color: #007bff;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+
+/* 信息条 */
+
+.contant_list li {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contant_list li:hover {
+    background-color: #fff;
+}
+
+.contant_list .date {
+    width: 100px;
+    font-size: 16px;
+    color: #007bff;
+    text-align: center;
+    padding: 0;
+    margin: 25px 0 6px 15px;
+    border: 1px solid #007bff;
+    letter-spacing: 3px;
+}
+
+.contant_list .date p:nth-child(2) {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contant_list .text {
+    padding-left: 30px;
+}
+
+.contant_list .text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #007bff;
+    font-family: 'microsoft yahei';
+}
+
+.contant_list .text p {
+    color: #333;
+    font-family: 'microsoft yahei';
+    font-size: 16px;
+    text-indent: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.contant_list .come {
+    height: 100px;
+    display: inline-block;
+    line-height: 165px;
+}
+
+.contant_list .come a {
+    color: #007bff;
+}
+
+
+/* 分页 */
+
+.page {
+    margin: 20px 0 0 0;
+}
+
+
+/* 侧边栏 */
+
+.asidetop {
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #2E94B9;
+}
+
+.asidetop span {
+    line-height: 36px;
+    font-size: 34px;
+    color: #EAFFD0;
+}

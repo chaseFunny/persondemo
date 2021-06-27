@@ -1,0 +1,150 @@
+/* 媒体查询板块 */
+
+
+/* 修改container的最大宽度为 1280 根据设计稿来走的 */
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .head_nav .nav-con>li>a {
+        font-size: 14px;
+    }
+}
+
+
+/* 当我们进入 小屏幕 还有 超小屏幕的时候 我们 nav 里面的li 浮动起来 并且宽度为 20%  */
+
+@media screen and (max-width: 991px) {}
+
+
+/* 当我们进入 超小屏幕的时候 我们 nav 文字会变成14px  */
+
+@media screen and (max-width: 767px) {
+    html,
+    body {
+        width: 100%;
+    }
+    /* 轮廓图 */
+    .carousel-caption a,
+    .carousel-caption span {
+        font-size: 22px;
+    }
+    /* 新闻 */
+    .news_silder .list_box {
+        margin-bottom: 5px;
+        border-bottom: 1px solid #007bff;
+    }
+    .news_silder img {
+        border-radius: 8px;
+    }
+    .news .article {
+        border-top: 1px solid transparent;
+    }
+    /* 侧边栏 */
+    .aside {
+        z-index: 5;
+    }
+    /* 科研成果 */
+    .research {
+        height: 60px;
+    }
+    .research .title h3 {
+        margin-bottom: 0!important;
+        padding-bottom: 0;
+    }
+    .title {
+        border-bottom: 0;
+    }
+    .research_cont .tit a {
+        font-size: 20px;
+        text-align: center;
+        line-height: 70px;
+    }
+    .research_cont .detail {
+        padding-left: 80px;
+    }
+    /* 头部 */
+    .mobil-header {
+        height: 60px;
+        width: 100%;
+        font-size: 30px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        line-height: 60px;
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
+    .mobil-header h1 {
+        text-align: right;
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+    .mobil-header .nav {
+        padding-top: 6px;
+        padding-left: 15px;
+    }
+    /* 尾部 */
+    .social ul li {
+        padding: 0;
+        border-bottom: 0;
+        font-size: 20px;
+        color: #fff;
+        width: 170px;
+        text-align: left;
+        line-height: 80px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .social ul span img {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        display: block;
+        height: 80px;
+        width: 130px;
+        border-radius: 8px;
+        border: 8px solid transparent;
+    }
+    /* 模态框 */
+    .login {
+        width: 100%;
+    }
+    /* 新闻界面右侧设置 */
+    .contant_nav span {
+        margin-bottom: 10px;
+    }
+    /* 老师 */
+    .main_mask {
+        height: 600px;
+    }
+    /* list页面的 */
+    .contant_nav .guild {
+        font-size: 12px;
+        padding: 0;
+    }
+    .contant_nav span {
+        padding: 0;
+        font-size: 14px!important;
+    }
+    .contant_list li {
+        border-bottom: 1px solid #007bff;
+    }
+    .contant_list .text h3 {
+        margin-bottom: 20px;
+    }
+    .contant_list .come a {
+        float: right;
+    }
+    .contant_list .come {
+        height: 40px!important;
+        line-height: 40px!important;
+    }
+    .page nav {
+        float: none;
+        text-align: center;
+    }
+}

@@ -1,0 +1,458 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #464646;
+    list-style: none;
+}
+
+.nav {
+    height: 41px;
+    width: 990px;
+    margin: 0px auto;
+    padding: 0px 5px;
+    position: relative;
+    line-height: 41px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.nav a {
+    margin-left: 10px;
+}
+
+.nav a:hover {
+    color: #FF0000;
+}
+
+.clear {
+    clear: both;
+}
+
+.bigbox {
+    width: 100%;
+    background-image: url(../img/bg.jpg);
+    overflow: hidden;
+    position: relative;
+    padding-top: 25px;
+}
+
+.bigbox .box {
+    width: 1200px;
+    height: 775px;
+    margin: 0 auto;
+}
+
+.box .top {
+    height: 86px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.box .top img {
+    width: 191px;
+    height: 86px;
+}
+
+.box .top .right {
+    display: inline-block;
+    line-height: 86px;
+}
+
+.box .top .right a {
+    height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    color: white;
+    margin-left: 70px;
+}
+
+.bigbox .top .right a:hover {
+    color: cornflowerblue;
+}
+
+.box .down {
+    width: 1200px;
+    height: 380px;
+    position: absolute;
+    top: 190px;
+    background-image: url(../img/下载\ \(1\).png);
+    /* z-index: 2; */
+}
+
+.box .down .img {
+    height: 380px;
+    width: 1200px;
+}
+
+.box .down img:hover {
+    -webkit-transform: scale(1.1);
+    transition: all 1s linear;
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.box .down .title {
+    position: absolute;
+    bottom: -50px;
+    left: 400px;
+}
+
+.box .down .title a {
+    width: 90px;
+    height: 5px;
+    display: inline-block;
+    background-color: darkgray;
+}
+
+.box .down .title li a:hover {
+    background-color: lightgray;
+}
+
+.box .down .title li {
+    display: inline-block;
+}
+
+.box .down .gaimg {
+    display: none;
+}
+
+.box .down .gaimg:target {
+    display: block;
+}
+
+.box .down .gaimg img {
+    border-radius: 20px;
+}
+
+
+/*new*/
+
+.new {
+    height: 775px;
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+}
+
+.nbox {
+    height: 200px;
+}
+
+.new .top {
+    border-bottom: 5px solid white;
+    width: 194px;
+    height: 105px;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 503px;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid white;
+    /*background-color: #464646;*/
+}
+
+.new .top span {
+    line-height: 105px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.new .down {
+    width: 1200px;
+    height: 421px;
+    position: absolute;
+    top: 200px;
+    /*background-color: salmon;*/
+}
+
+.new .down a {
+    float: left;
+    width: 224px;
+    height: 421px;
+    /*	background-color: seagreen;*/
+    margin-left: 14px;
+    border: 1px solid dodgerblue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.new .down a img {
+    border-radius: 20px;
+}
+
+.new .down a:hover {
+    border-color: white;
+}
+
+.new .down a img:hover {
+    -webkit-transform: scale(1.1);
+    transition: all 1s linear;
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.new .down p {
+    text-align: center;
+}
+
+.new .down .js {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.new .down .js1 {
+    color: white;
+    background-color: dodgerblue;
+    text-align: center;
+}
+
+.new .down .js2 {
+    color: white;
+    background-color: darkcyan;
+    margin-left: 15px;
+}
+
+.resource {
+    height: 775px;
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+}
+
+.rnav {
+    border-bottom: 5px solid white;
+    width: 194px;
+    height: 105px;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 503px;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+.rnav span {
+    line-height: 105px;
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+}
+
+.resource .left {
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    width: 900px;
+    height: 300px;
+    border-top: 3px solid darkgray;
+    border-top-style: dotted;
+}
+
+.resource .left a {
+    display: block;
+    border-bottom: 1px solid darkgray;
+    height: 70.2px;
+}
+
+.resource .left a p {
+    line-height: 70.2px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+.resource .left a span {
+    color: darkgray;
+}
+
+.resource .left a span:hover {
+    color: white;
+}
+
+.resource .right {
+    position: absolute;
+    top: 230px;
+    right: 0px;
+}
+
+.resource .right img {
+    height: 300px;
+    border-radius: 30px;
+}
+
+
+/*test*/
+
+.test {
+    height: 775px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.test .tbox {
+    height: 200px;
+}
+
+.test .top {
+    border-bottom: 5px solid white;
+    width: 194px;
+    height: 105px;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 503px;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid white;
+    /*background-color: #464646;*/
+}
+
+.test .tbox .top span {
+    line-height: 105px;
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+}
+
+.test .down {
+    width: 500px;
+    height: 328px;
+    margin: 0 auto;
+}
+
+.test .down a {
+    position: relative;
+    width: 224px;
+    height: 328px;
+    /*	background-color: seagreen;*/
+    margin-left: 14px;
+    border: 1px solid dodgerblue;
+    border-radius: 20px;
+    overflow: hidden;
+    float: left;
+}
+
+.test .down img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 38px;
+    transition-duration: 1s;
+}
+
+.test .js {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.test .js1 {
+    font-size: 14px;
+    color: white;
+    background-color: dodgerblue;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.test .js2 {
+    font-size: 14px;
+    color: white;
+    background-color: darkcyan;
+    text-align: center;
+}
+
+.test a:hover {
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.test img:hover {
+    transform: scale(1.1);
+}
+
+.test .down .dw {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    color: white;
+}
+
+.footer {
+    height: 100px;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer .le {
+    float: left;
+}
+
+.footer .le img {
+    height: 80.21px;
+    width: 192px;
+}
+
+.footer .ri {
+    height: 80px;
+    margin-left: 250px;
+}
+
+.footer .ri p {
+    color: white;
+    font-size: 12px;
+}
+
+
+/*侧边条*/
+
+.aside {
+    width: 40px;
+    height: 400px;
+    background-color: rgba(0 0 0 0.1);
+    position: fixed;
+    right: 50px;
+    top: 200px;
+    z-index: 4;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.aside a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-size: cover;
+    background-image: url(../img/icon/1.png);
+    /* box-shadow: ; */
+    text-align: center;
+    opacity: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* .aside a:hover {} */

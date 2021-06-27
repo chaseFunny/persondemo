@@ -1,0 +1,138 @@
+    / *！normalize.css v8.0.1 | MIT许可证| github.com/necolas/normalize.css * / / *文档========================================================================* / / ** * 1.校正行高在所有浏览器中。 * 2.防止在iOS中更改方向后调整字体大小。 * / html {
+    行高：1.15;
+    / * 1 * / -webkit-text-size-adjust：100％;
+    / * 2 * /
+}
+
+/ *部分=========================================================================* / / ** *在所有浏览器中删除边距。 * / 正文 {
+    边距：0;
+}
+
+/ ** *在IE中一致地渲染`main`元素。 * / main {
+    display：block;
+}
+
+/ ** * 在Chrome，Firefox和Safari中，在`section`和*`article`上下文中更正`h1'元素的字体大小和边距。
+ * / h1 {
+    font-size：2em;
+    保证金：0.67em 0;
+}
+
+/ *分组内容=======================================================================* / / ** * 1.在Firefox中添加正确的框大小。 * 2.在Edge和IE中显示溢出。 * / 小时 {
+    框大小：内容框；/ * 1 * / 高度：0；/ * 1 * / 溢出：可见；/ * 2 * /
+}
+
+/ ** * 1.在所有浏览器中更正字体大小的继承和缩放。 * 2.在所有浏览器中更正奇数的“ em”字体大小。 * / pre {
+    font-family：等宽，等宽；/ * 1 * / font-size：1em;
+    / * 2 * /
+}
+
+/ *文本级语义==========================================================================* / / ** *删除在活动链路的灰色背景IE10。 * / a {
+    background-color：transparent;
+}
+
+/ ** * 1.移除Chrome 57-的底部边框。 * 2.在Chrome，Edge，IE，Opera和Safari中添加正确的文字修饰。 * / abbr [title] {
+    底部边框：无；/ * 1 * / 文本修饰：下划线；/ * 2 * / 文本修饰：带下划线的点划线；/ * 2 * /
+}
+
+/ ** *在Chrome，Edge和Safari中添加正确的字体粗细。 * / b， 强 {
+    字体粗细：粗体；
+}
+
+/ ** * 1.在所有浏览器中更正字体大小的继承和缩放。 * 2.在所有浏览器中更正奇数的“ em”字体大小。 * / 代码， kbd， 样本 {
+    font-family：等宽，等宽；/ * 1 * / font-size：1em;
+    / * 2 * /
+}
+
+/ ** *在所有浏览器中添加正确的字体大小。 * / 小 {
+    字体大小：80％；
+}
+
+/ ** *防止`sub`和`sup`元素影响 所有浏览器中的行高。 * / sub， sup {
+    font-size：75％;
+    行高：0 职位：相对 垂直对齐：基线；
+}
+
+sub {
+    bottom：-0.25em;
+}
+
+sup {
+    top：-0.5em;
+}
+
+/ *嵌入的内容========================================================================* / / ** *删除IE 10中链接内图像的边框。 * / img {
+    边框样式：无；
+}
+
+/ *表格==================================================* / / ** * 1.在所有浏览器中更改字体样式。 * 2.在Firefox和Safari中删除边距。 * / 按钮， 输入， optgroup， 选择， textarea {
+    字体家族：继承；/ * 1 * / 字体大小：100％;
+    / * 1 * / 行高：1.15;
+    / * 1 * / 保证金：0;
+    / * 2 * /
+}
+
+/ ** *显示IE中的溢出。 * 1.在Edge中显示溢出。 * / 按钮， 输入 {
+    / * 1 * / 溢出：可见；
+}
+
+/ ** *删除Edge，Firefox和IE中文本转换的继承。 * 1.删除Firefox中文本转换的继承。 * / 按钮， 选择 {
+    / * 1 * / 文本转换：无；
+}
+
+/ ** *更正了无法在iOS和Safari中设置可点击类型的样式的问题。 * / 按钮， [type=“ button”]， [type=“ reset”]， [type=“ submit”] {
+    -webkit-appearance：button;
+}
+
+/ ** *在Firefox中删除内部边框和填充。 * / button ::-moz-focus-inner， [type=“ button”] ::-moz-focus-inner， [type=“ reset”] ::-moz-focus-inner， [type=“ submit”] ::-moz-focus-inner {
+    border-style：none;
+    填充：0;
+    *恢复以前的规则未设置的焦点样式。 * / 按钮：-moz-focusring， [type=“ button”]：-moz-focusring， [type=“ reset”]：-moz-focusring， [type=“ submit”]：-moz-focusring {
+        轮廓： 1px点缀的ButtonText;
+    }
+    / ** *更正Firefox中的填充。 * / fieldset {
+        padding：0.35em 0.75em 0.625em;
+    }
+    / ** * 1.更正Edge和IE中的文本换行。 * 2.纠正IE中来自“ fieldset”元素的颜色继承。 * 3.删除填充，使开发人员 在所有浏览器中将`fieldset`元素清零时不会被赶上。 * / 图例 {
+        框大小：border-box；/ * 1 * / color：继承;
+        / * 2 * / 显示：表格；/ * 1 * / 最大宽度：100％；/ * 1 * / 填充：0;
+        / * 3 * / 空格：正常；/ * 1 * /
+    }
+    / ** *在Chrome，Firefox和Opera中添加正确的垂直对齐方式。 * / 进度 {
+        垂直对齐：基线；
+    }
+    / ** *删除IE 10+中的默认垂直滚动条。 * / textarea {
+        溢出：自动；
+    }
+    / ** * 1.在IE 10中添加正确的框大小。 * 2.在IE 10中删除填充。 * / [type=“ checkbox”]， [type=“ radio”] {
+        框大小：border-box；/ * 1 * / 填充：0;
+        / * 2 * /
+    }
+    / ** *更正Chrome中递增和递减按钮的光标样式。 * / [type=“ number”] ::-webkit-inner-spin-button， [type=“ number”] ::-webkit-outer-spin-button {
+        height：auto;
+    }
+    / ** * 1.纠正Chrome和Safari中的奇怪外观。 * 2.在Safari中更正轮廓样式。 * / [type=“ search”] {
+        -webkit-appearance：textfield;
+        / * 1 * / 轮廓偏移：-2px;
+        / * 2 * /
+    }
+    / ** *删除macOS上Chrome和Safari中的内部填充。 * / [type=“ search”] ::-webkit-search-decoration {
+        -webkit-appearance：无；
+    }
+    / ** * 1.纠正了无法在iOS和Safari中设置可点击类型的样式的问题。 * 2.在Safari中将字体属性更改为`inherit`。 * /::-webkit-file-upload-button {
+        -webkit-appearance：button;
+        / * 1 * / font：继承;
+        / * 2 * /
+    }
+    / *互动==========================================================================* / / * *在Edge，IE 10+和Windows XP中添加正确的显示火狐浏览器。 * / 详细信息 {
+        显示：块;
+    }
+    / * *在所有浏览器中添加正确的显示。 * / 摘要 {
+        显示：列表项；
+    }
+    / *杂项========================================================================* / / ** *在IE 10+中添加正确的显示。 * / 模板 {
+        显示：无；
+    }
+    / ** *添加正确的显示在IE 10 * / [隐藏] {
+        显示：无;
+    }

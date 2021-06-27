@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<title>天猫网站</title>
+		<style type="text/css">
+			*{
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+				text-decoration: none;
+			}
+			nav{
+				width: 1190px;
+				height: 30px;
+				border: 1px solid #ccc;
+				margin: 0 auto;
+			}
+			nav li{
+				display: inline-block;
+				width: 70px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				color: white;
+			}
+			nav h2{
+				float: left;
+				width: 190px;
+				line-height: 30px;
+				text-align: center;
+				background-color: #FF5000;
+				color: white;
+				font-size: 16px;			
+			}
+			nav ul{
+				width: 1000px;
+				float: left;
+				height: 30px;
+				
+				background-image: linear-gradient(to right,coral,orange);			}
+			nav li a{
+				font-size: 16px;
+				font-weight: 700;
+				color: white;
+			}
+			nav .fg{
+				width: 10px;
+				
+			}
+			.mok1{
+					width: 1190px;
+					height: 530px;
+					border: 1px solid blanchedalmond;
+					margin: 0 auto;
+					position: relative;
+			}
+			.left{
+				
+				width: 190px;
+				height: 530px;
+				border: 1px solid orange;
+				position: relative;
+			}
+			.left li a{
+				color: black;
+				font-size: 20px;
+				padding-bottom: 10px;
+				margin-left: 10px;
+			}
+			.mok1 .left span{
+				position: absolute;
+				right: 10px;
+				font-size: 13px;
+				
+			}
+			.left li{
+				margin-bottom: 3px;
+			}
+			.logo{
+				width: 100%;
+			}
+			.logo .logoinner{
+				width: 1190px;
+				margin: 0 auto;
+			}
+			.logo .logoleft {
+				float: left;
+				
+			}
+			
+			.logo .center{
+				float: left;
+				font-size: 12px;
+				position: relative;
+				top: 50px;
+				left: 10px;
+			}
+			.logo .center .search{
+				width: 500px;
+				height: 30px;
+				padding: 2px 10px 2px;
+				border: 2px solid #FF5000;
+				border-radius: 20px 0 0 20px;
+				background: url(img/icon1.PNG) no-repeat 1px 6px ;			
+				outline: none;
+				float: left;
+				padding-left: 20px;
+				
+			}
+			.logo .center .search img{
+				    position: absolute;
+				    top: 9px;
+				    left: 14px;
+			}
+			.logo .right{
+				float: left;
+				margin-bottom: 40px;
+			}
+			.clear{
+				clear: both;
+			}
+			.logo .lgt1{
+				text-indent: 20px;/*文字缩进*/
+			}
+			.logo a{
+				font-size: 12px;
+				color:black;
+			}
+			.logo .red{
+				color: red;
+			}
+			.logo .lgt3{
+				background-image: linear-gradient(to right,coral,orange);	
+				font-size: 12px;
+				padding: 3px;
+				color: white;	
+				font-weight: 700;
+				
+			}
+			.banner{
+				width: 100%;
+				background-image: url(img/q.png);
+				height: 100px;
+				padding-top: 15px;
+				
+			}
+			.banner .bainner{
+				width: 1190px;
+				margin: auto;
+				
+			}
+			.banner a{
+				width: 209px;
+				height: 75px;
+				display: inline-block;
+				margin-right: 5px;
+			}
+			.banner .bl{
+				float: left;
+				color: white;
+				margin-left: 15px;
+				margin-top: 10px;
+			}
+			.banner .bl h4{
+				font-size: 20px;
+			}
+			.banner .br{
+				float: left;
+				position: relative;	
+				left: 64px;
+				top: 12px;
+			}
+			.banner .br img{
+				width: 52px;
+				height: 52px;
+			}
+			.logo .btn1{
+				width: 75px;
+				height: 38px;
+				background-image: linear-gradient(to right,#ff9000,#ff5000);
+				border: none;
+				color: white;
+				font-size: 18px;
+				font-weight: 700;
+				border-radius: 0px 20px 20px 0px;
+				margin: 0px;
+			}
+			.mg{
+				position: absolute;
+				right: 100px;
+				top: 22px;
+			}
+			.logo .right{
+				float: left;
+				position: relative;
+				left: 130px;
+				top: 40px;
+			}
+			.ad{
+				width: 1190px;
+				margin: 15px auto;
+			}
+			.ad li{
+				display: inline-block;
+			}
+			.goods{
+				width: 1190px;
+				height: 358px;
+				
+				font-size: 14px;
+				padding-left: 21px;
+				
+				position: relative;
+				margin: auto;
+			}
+			.goods .ginner a{
+				display: inline-block;
+				width: 180px;
+				margin:0 14px 17px 0;
+			}
+			.gtop{
+				height: 180px;
+				height: 180px;
+			}
+			.gbot h4{
+				    margin-top: 5px;
+				    font-size: 16px;
+				    height: 28px;
+				    overflow: hidden;
+				    line-height: 28px;
+			}
+			.gbot .js{
+				    line-height: 24px;
+				    color: #999;
+				    font-size: 14px;
+				    overflow: hidden;
+				    height: 24px;
+			}
+			.gbot .hp{
+				    line-height: 22px;
+				    height: 22px;
+				    margin-top: 12px;
+				    color: #35b1ff
+			}
+			.h4f{
+				display: inline-block;
+				height: 24px;
+				line-height: 24px;
+				font-weight: 400px;
+				margin-left: 6px;
+			}
+			.h4d{
+				position: relative;
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+			.rm{
+				width: 1190px;
+				margin: auto;
+				position: relative;
+			}
+			.rm h3{
+				    position: relative;
+				    height: 22px;
+				    line-height: 22px;
+				    margin: 17px 18px;
+				    font-size: 20px;
+				    color: #FF5500;
+			}
+			.rm h3:before{
+				content: "";
+				width: 4px;
+				height: 15px;
+				background-color: #FF5500;
+				display: inline-block;
+				margin-right: 7px;
+			}
+			.ml li {
+				display: inline-block;
+				
+			}
+			
+			.ml  a{
+				color: #999;
+				font-size: 12px;
+				float: left;
+				height: 14px;
+				line-height: 14px;				
+				margin-bottom: 10px;
+				padding-right: 15px;
+				
+			}
+			.left1{
+				font-size: 25px;	
+				color: #F40;
+				position: absolute;
+				left: 18px;
+				bottom: 18px;
+			}
+			.left1 i{
+				font-size: 15px;
+				margin-right: 5px;
+				font-style: normal;
+			}
+			.right1{
+				
+				font-size: 12px;
+				color: #999;
+				position: absolute;
+				right: 18px;
+				bottom: 18px;
+			}
+			.wp{
+				width: 190px;
+				height: 310px;
+				border: 1px solid #CCCCCC;
+				padding: 17px;
+				display: inline-block;
+				position: relative;
+			}
+			.wp:hover{
+				border: 1px solid #FF5000;
+			}
+			.im img{
+				width: 197px;
+				height: 197px;
+			}
+			.bigtop{
+				width: 100%;
+				background-color: #f5f5f5;
+				text-align: center;
+			}
+			.bigtop .top{
+				width: 1190px;
+				height: 35px;
+				margin: auto;
+				
+			}
+			
+			.bigtop .left11{
+				width: 300px;
+				height: 35px;
+				line-height: 35px;
+				float: left;
+			}
+			.bigtop .right11{
+				width: 750px;
+				height: 35px;
+				line-height: 35px;
+				float: right;
+			}
+			.bigtop .topmenu{
+				display: inline-block;
+				width: 70px;
+			}
+			.top a:hover{
+				color: red;
+			}
+			.top .long{
+				width: 100px;
+			}
+			
+			.bigtop li a{
+				font-size: 12px;
+				color: #999999;
+			}
+			.bigtop .lang{
+				width: 100px;
+			}
+			.top .red1{
+				color: red;
+			}
+			.mok1 .left {
+				position: relative;
+			}
+			.mok1 .left .tanchu{
+				position: absolute;
+				left: 190px;
+				top: 0px;
+				display: none;
+				z-index: 100000000;/*重叠后的顺序，值越大越靠上*/
+			}
+			.mok1 .left li:hover .tanchu{
+				display: block;
+			}
+			.aside{
+				width: 70px;
+				height: 250px;
+				background-color: antiquewhite;
+				position: fixed;
+				right: 100px;
+				bottom: 70px;
+				
+			}
+			.aside a{
+				width: 70px;
+				height: 50px;
+				display: block;
+				color: #000000;
+				font-size: 15px;
+				border: 1px solid black;
+				text-align: center;
+			}
+			.aside a:hover{
+				color: green;
+			}
+			.tb-ft{
+				width: 1190px;
+				height: 50px;
+				margin: auto;
+				background-color: aliceblue;
+			}
+			.tb-ft .tb-end{
+				width: 60px;
+				height: 20px;
+				margin: auto;
+				position: relative;
+			}
+			.tb-end:before{
+				content: "";
+				width: 70px;
+				height: 1px;
+				background-color: #000000;
+				display: inline-block;
+				position: absolute;
+				left:-100px;	
+				top: 50%;		
+				}
+				.tb-end:after{
+				content: "";
+				width: 70px;
+				height: 1px;
+				background-color: #000000;
+				display: inline-block;
+				position: absolute;
+				right: -100px;	
+				top: 50%;		
+				}
+				.boxmain{
+				width: 1000px;
+				height: 520px;
+				position: relative;
+				background-image: url(img/mid/1.webp);
+			}
+			.boxmain img{
+				width: 1000px;
+				height: 520px
+			}
+			.boxmain .boxtitle{
+				position: absolute;
+				bottom: 30px;
+				left: 400px;
+			}
+			.boxmain .boxtitle li a{
+				width: 30px;
+				height: 5px;
+				display: inline-block;
+				background-color: darkgray;
+			}
+			.boxmain .boxtitle li a:hover{
+				background-color: lightgray;
+			}
+			.boxmain .boxtitle li{
+			    display: inline-block;
+			}
+			.boxmain .boximage{
+				display: none;
+			}
+			.boxmain .boximage:target{
+				display: block;
+			}
+			.mok1 .midddle{
+				position: absolute;
+				left: 190px;
+				top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<center><h4 style="font-size: 16px;	font-family:'微软雅黑';color: #FF0000;">1801141085张浩</h4></center>
+		<div class="aside">
+			<a href="#top">top</a>
+			<a href="#sou">搜索</a>
+			<a href="#zhu">主题市场</a>
+			<a href="#jing">精致生活</a>
+			<a href="#you">有好货</a>
+			<a href="#hotsale">热卖单品</a>
+		</div>
+		
+		<div class="bigtop" id="top">
+			<div class="top">
+				<div class="left11">
+					<ul>
+						<li class="topmenu"><a href="#">中国大陆<span class=" iconfont  icon-xiajiantou"></span></a></li>
+						<li class="topmenu " ><a href="#" style="color: red;">亲，请登录</a></li>
+						<li class="topmenu"><a href="#">免费注册</a></li>
+						<li class="topmenu"><a href="#">手机逛淘宝</a></li>
+					</ul>
+				</div>
+				<div class="right11">
+					<ul>
+						
+						<li class="topmenu"><a href="#">我的淘宝<span class=" iconfont  icon-xiajiantou"></span></a></li>
+						<li class="topmenu"><a href="#"><span class=" iconfont  icon-gouwuche red1"></span>购物车<span class=" iconfont  icon-xiajiantou"></span></a></li>
+						<li class="topmenu long"><a href="#"><span class=" iconfont icon-star"></span>收藏夹<span class=" iconfont  icon-xiajiantou"></span></a></li>
+						<li class="topmenu"><a href="#">商品分类</a></li>
+						<li class="topmenu"><a href="#">免费开店</a></li>
+						<li class="topmenu long"><a href="#">千牛卖家中心<span class=" iconfont  icon-xiajiantou"></span></a></li>
+						<li class="topmenu"><a href="#">联系客服<span class=" iconfont  icon-xiajiantou"></span></a></li>
+						<li class="topmenu long"><a href="#"><span class=" iconfont icon-daohang red1"></span>网站导航<span class=" iconfont  icon-xiajiantou"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="banner">
+			<div class="bainner">
+				<a href="" style="width: 90px;height: 80px;"><img src="img/3.png"/></a>
+				<a href="#" style="background-image: url(img/a.png);">
+					<div class="bl">
+						<h4>洗衣机</h4>
+						<p>抢24利息</p>
+					</div>
+					<div class="br">
+						<img src="img/22.PNG"/>
+					</div>
+				</a>
+				<a href="#" style="background-image: url(img/b.png);">
+					<div class="bl">
+						<h4>洗衣机</h4>
+						<p>抢24利息</p>
+					</div>
+					<div class="br">
+						<img src="img/22.PNG"/>
+					</div>
+				</a>
+				<a href="#" style="background-image: url(img/c.png);">
+					<div class="bl">
+						<h4>洗衣机</h4>
+						<p>抢24利息</p>
+					</div>
+					<div class="br">
+						<img src="img/22.PNG"/>
+					</div>
+				</a>
+				<a href="#" style="background-image: url(img/d.png);">
+					<div class="bl">
+						<h4>洗衣机</h4>
+						<p>抢24利息</p>
+					</div>
+					<div class="br">
+						<img src="img/22.PNG"/>
+					</div>
+				</a>
+				
+				<a href="#" style="background-image: url(img/e.png);">
+					<div class="bl">
+						<h4>洗衣机</h4>
+						<p>抢24利息</p>
+					</div>
+					<div class="br">
+						<img src="img/22.PNG"/>
+					</div>
+				</a>
+				
+			</div>
+		</div>
+		<div class="logo" id="sou">
+			<div class="logoinner">
+				<div class="logoleft">
+					<img src="img/290-130.gif"/>
+				</div>
+				<div class="center">
+					<div class="top">
+						<p class="lgt1">
+							<a href="#" class="lgt3">宝贝</a>
+							<a href="#" class="red">天猫</a>
+							<a href="#" class="red">店铺</a>
+						</p>
+					</div>
+					<div class="middle">
+						<div class="mg">
+							<img src="img/icon2.PNG"/>
+						</div>
+						<form action="" method="post">
+							<input type="text" name="" id="" value="" class="search" placeholder="鹿阿姨" />
+						<input type="submit" name="" id="" value="搜索" class="btn1" />
+							
+						</form>						
+					</div>				
+					<div class="bottom">
+						<p class="lgt2"> 
+							<a href="#">十件套</a>
+							<a href="#">十件套</a>
+							<a href="#">十件套</a>
+							<a href="#" class="red">十件套</a>
+							<a href="#">十件套</a>
+							<a href="#">十件套</a>
+							<a href="#">十件套</a>						
+						</p>
+					</div>
+				</div>
+				<div class="right"><img src="img/二维码.PNG"/></div>
+			</div>
+		<div class="clear"></div>
+		</div>
+		
+		<nav id="zhu">
+			<h2>主题市场</h2>
+			<ul>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">天猫</a></li>
+				<li class="fg">|</li>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">天猫</a></li>
+				<li class="fg">|</li>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">天猫</a></li>
+			</ul>
+			
+		</nav>
+		<article>
+			<div class="mok1">	
+				<div class="left">
+					<ul>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan1.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan2.PNG" alt="" /></div>
+						</li>					
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan3.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan4.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan5.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan6.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan7.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan8.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan9.PNG" alt="" /></div>
+						</li>					
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan10.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan11.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan12.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan13.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan14.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan15.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan16.PNG" alt="" /></div>
+						</li>					
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan1.PNG" alt="" /></div>
+						</li>
+						<li><a href="#">内衣/女装/男装<span>></span></a>
+							<div class="tanchu"><img src="img/tan12.PNG" alt="" /></div>
+						</li>
+						
+						
+					</ul>
+				</div>
+				<div class="midddle">
+					<div class="boxmain">
+				<div class="boxtitle">
+					<ul>
+						<li><a href="#boximage1"></a></li>
+						<li><a href="#boximage2"></a></li>
+						<li><a href="#boximage3"></a></li>
+						<li><a href="#boximage4"></a></li>
+					    <li><a href="#boximage3"></a></li>
+						<li><a href="#boximage4"></a></li>
+						
+					</ul>
+				</div>
+				<div class="boximage" id="boximage1" ><img src="img/mid/1.webp" alt="" /></div>
+				<div class="boximage" id="boximage2" ><img src="img/mid/2.jpg" alt="" /></div>
+				<div class="boximage" id="boximage3"><img src="img/mid/3.jpg" alt="" /></div>
+				<div class="boximage" id="boximage4"><img src="img/mid/4.webp" alt="" /></div>
+				<div class="boximage" id="boximage5"><img src="img/mid/5.jpg" alt="" /></div>
+				<div class="boximage" id="boximage6"><img src="img/mid/6.webp" alt="" /></div>
+				
+			</div>
+				</div>
+				<div class="right"></div>
+			</div>
+		</article>
+	
+		
+		
+		<div class="goods" id="you">
+			<h4 class="h4d"><img src="img/148-48.png" style="width: 74px;height: 24px; "/><span class="h4f">与品质生活不期而遇</span></h4>
+			<div class="ginner">
+				<a href="">
+					<div class="gtop">
+						<img src="img/p1.PNG"/>
+					</div>
+					<div class="gbot">
+						<h4>大豆家</h4>
+						<p class="js">一脚蹬设计，方便日常的穿</p>
+					<p class="hp"><span class="icon-xiaolian">&#xe626;</span>3758人说好</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="gtop">
+						<img src="img/p1.PNG"/>
+					</div>
+					<div class="gbot">
+						<h4>大豆家</h4>
+						<p class="js">一脚蹬设计，方便日常的穿</p>
+						<p class="hp">3758人说好</p>
+					</div>
+				</a>
+				
+				
+				<a href="">
+					<div class="gtop">
+						<img src="img/p3.PNG"/>
+					</div>
+					<div class="gbot">
+						<h4>LANCOME秋冬限量迷雾</h4>
+						<p class="js">雾面质感暗红色管身，优雅</p>
+						<p class="hp">12人说好</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="gtop">
+						<img src="img/p4.PNG"/>
+					</div>
+					<div class="gbot">
+						<h4>汽车盲点变道辅助系</h4>
+						<p class="js">行车安全</p>
+						<p class="hp">24人说好</p>
+					</div>
+				</a>
+				<a href="">
+					<div class="gtop">
+						<img src="img/p5.PNG"/>
+					</div>
+					<div class="gbot">
+						<h4>PUMA芥末绿老爹鞋</h4>
+						<p class="js">芥末绿色</p>
+						<p class="hp">7人说好</p>
+					
+					</div>
+				</a>
+				<a href="">
+					<div class="gtop">
+						<img src="img/p5.PNG"/>
+					</div>
+					<div class="gbot">
+						<h4>PUMA芥末绿老爹鞋</h4>
+						<p class="js">芥末绿色</p>
+						<p class="hp">7人说好</p>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+		
+	
+		
+		<div class="rm" id="hotsale">
+			<h3>热卖单品</h3>
+			<div class="ml">
+				<ul>
+					<li><a href="#" style="margin-left: 18px;">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+					<li><a href="#">冰箱</a></li>
+				</ul>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/111.PNG"/>
+				</div>
+				
+				<p class="left1"><span><i>&yen;</i>89</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/222.PNG"/>
+				</div>
+				
+				<p class="left1"><span><i>&yen;</i>222</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/111.PNG"/>
+				</div>
+				
+				<p class="left1"><span><i>&yen;</i>89</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/222.PNG"/>
+				</div>
+				
+				<p class="left1"><span><i>&yen;</i>89</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/333.PNG"/>
+				</div>
+			
+				<p class="left1"><span><i>&yen;</i>89</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/333.PNG"/>
+				</div>
+			
+				<p class="left1"><span><i>&yen;</i>89</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/333.PNG"/>
+				</div>
+			
+				<p class="left1"><span><i>&yen;</i>89</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/333.PNG"/>
+				</div>
+			
+				<p class="left1"><span><i>&yen;</i>89</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/333.PNG"/>
+				</div>
+			
+				<p class="left1"><span><i>&yen;</i>89</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="wp">
+				<div class="im">
+					<img src="img/333.PNG"/>
+				</div>
+			
+				<p class="left1"><span><i>&yen;</i>89</span></p>
+				<p class="right1">月销3654笔</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="tb-ft">
+			<div class="tb-end">END</div>
+		</div>
+	</body>
+	
+</html>

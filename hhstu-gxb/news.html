@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄科工学部新闻</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="黄河科技学院-工学部" />
+    <!-- 关键字 -->
+    <meta name="keywords" content="黄河科技学院，黄河科技学院工学部，计算机专业" />
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="hhstu_gxb.ico" />
+    <!-- 引用栅格框架 -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- 新闻页css -->
+    <link rel="stylesheet" href="./css/news.css">
+    <!-- 引入bootstrap的js -->
+    <script src="./js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- 侧边栏 -->
+    <div class="asidetop">
+        <span class="glyphicon glyphicon-triangle-top"></span>
+    </div>
+    <!-- PC头部 -->
+    <header class="hd_top hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo">
+                        <h1 style="display: none;">黄河科技学院工学部</h1>
+                        <div class="col-md-6 tlogo">
+                            <a href="https://www2.hhstu.edu.cn/gxb/index.htm">
+                                <img src="./img/logog1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-2 search">
+                    <ul>
+                        <li>简体</li>/
+                        <li>English</li>/
+                        <li id="search"><span class="iconfont ">&#xe67d;</span></li>
+                    </ul>
+                    <!-- 模态框 -->
+                    <div id="mtk" class="login ">
+                        <input type="text " name="keyword " placeholder="请输入关键词 " id="btn" autocomplete="off">
+                        <button type="submit "><span class="iconfont ">&#xe67d;</span></button>
+                    </div>
+                    <div id="bg" class="login-bg"></div>
+                </div>
+            </div>
+            <div class="row head_nav">
+                <ul class="nav  nav-fill nav-con">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">学部概述</a>
+                        <ul>
+                            <span class="iconfont">&#xe66c;</span>
+                            <li>
+                                <a href="">私信</a>
+                            </li>
+                            <li>
+                                <a href="">评论</a>
+                            </li>
+                            <li>
+                                <a href="">@我</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">组成部门</a>
+                        <ul>
+                            <span class="iconfont">&#xe66c;</span>
+                            <li>
+                                <a href="">私信</a>
+                            </li>
+                            <li>
+                                <a href="">评论</a>
+                            </li>
+                            <li>
+                                <a href="">@我</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">教学科研</a>
+                        <ul>
+                            <span class="iconfont">&#xe66c;</span>
+                            <li>
+                                <a href="">私信</a>
+                            </li>
+                            <li>
+                                <a href="">评论</a>
+                            </li>
+                            <li>
+                                <a href="">@我</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">新闻动态</a>
+                        <ul>
+                            <span class="iconfont">&#xe66c;</span>
+                            <li>
+                                <a href="">私信</a>
+                            </li>
+                            <li>
+                                <a href="">评论</a>
+                            </li>
+                            <li>
+                                <a href="">@我</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">党建工作</a>
+                        <ul>
+                            <span class="iconfont">&#xe66c;</span>
+                            <li>
+                                <a href="">私信</a>
+                            </li>
+                            <li>
+                                <a href="">评论</a>
+                            </li>
+                            <li>
+                                <a href="">@我</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">实验实训</a>
+                        <ul>
+                            <span class="iconfont">&#xe66c;</span>
+                            <li>
+                                <a href="">私信</a>
+                            </li>
+                            <li>
+                                <a href="">评论</a>
+                            </li>
+                            <li>
+                                <a href="">@我</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">党建团学</a>
+                        <ul>
+                            <span class="iconfont">&#xe66c;</span>
+                            <li>
+                                <a href="">私信</a>
+                            </li>
+                            <li>
+                                <a href="">评论</a>
+                            </li>
+                            <li>
+                                <a href="">@我</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">招生就业</a>
+                        <ul>
+                            <span class="iconfont">&#xe66c;</span>
+                            <li>
+                                <a href="">私信</a>
+                            </li>
+                            <li>
+                                <a href="">评论</a>
+                            </li>
+                            <li>
+                                <a href="">@我</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- 手机端头部 -->
+    <header class="visible-xs mobil-header">
+        <div class="row">
+            <div class="col-xs-2 mobil_nav" style="padding:6px 0 0 12px ;"><span class=" glyphicon-th glyphicon glyphicon-th-list"></span></div>
+            <h1 class="col-xs-8" style="padding: 0;">黄河科技学院工学部</h1>
+            <div class="search col-xs-2" id="m_search"><span class="iconfont" style="font-size: 26px;">&#xe6ac;</span></div>
+            <!-- 模态框 -->
+            <div id="mtk" class="login ">
+                <input type="text " name="keyword " placeholder="请输入关键词 " id="btn" autocomplete="off">
+                <button type="submit "><span class="iconfont ">&#xe67d;</span></button>
+            </div>
+            <div id="bg" class="login-bg"></div>
+        </div>
+    </header>
+    <!-- 手机端导航栏 -->
+    <div class="mobil-nav clearfix">
+        <ul class="clearfix" frag="窗口03" portletmode="simpleSudyNavi">
+            <li>
+                <a href="/main.htm" target="_self">首页  <span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+            <li>
+                <a href="/21033/list.htm" target="_self">院情总览 <span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+            <li>
+                <a href="/21034/list.htm" target="_self">师资队伍<span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+            <li>
+                <a href="/21036/list.htm" target="_self">科学研究<span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+
+            </li>
+            <li>
+                <a href="/21035/list.htm" target="_self">教学思政<span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+            <li>
+                <a href="/zsgz/list.htm" target="_self">招生工作<span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+            <li>
+                <a href="/21038/list.htm" target="_self">就业工作<span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+            <li>
+                <a href="/50890/list.htm" target="_self">国内合作<span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+            <li>
+                <a href="/50891/list.htm" target="_self">国际交流<span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+            <li>
+                <a href="/50892/list.htm" target="_self">继续教育<span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+            <li>
+                <a href="/21039/list.htm" target="_self">人才招聘<span class="fr" style="color: #003F88; font-weight: normal;">>></span></a>
+            </li>
+        </ul>
+        <div style="overflow: hidden;background-color: #f5f5f5;">
+            <div class="link clearfix">
+                <a class="fl " href="# " target="_blank ">工学部大家庭</a>
+                <a class="fl " href="# " target="_blank ">English</a>
+                <div class="search fl ">
+                    <span class="iconfont ">&#xe67d;</span>
+                </div>
+            </div>
+        </div>
+        <div class="close glyphicon glyphicon-remove "></div>
+    </div>
+    <div class="banner_list "></div>
+    <div class="container list">
+        <!-- 左侧部分 -->
+        <div class="list_lf col-md-3">
+            <span>新闻动态</span>
+            <div class="aside">
+                <ul>
+                    <li class="asidenav">动态分类 </li>
+                    <li class="asidecon"><a href="#">学部动态</a></li>
+                    <li class="asidecon"><a href="#">通知公告</a></li>
+                    <li class="asidecon"><a href="#">学术专题</a></li>
+                </ul>
+                <div class="contact">
+                    <p class="asidenav">——联系我们——</p>
+                    <p class="asidecon">工学部纪检信箱：<a href="#">hkdgxbjj@163.com</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧部分 -->
+        <div class="list_rt col-md-9 ">
+            <div class="contant_nav row">
+                <ol class="breadcrumb fl col-xs-9">
+                    <li><span class="glyphicon glyphicon-home"></span> 您的位置：</li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">新闻动态</a></li>
+                    <li class="active">学部新闻</li>
+                </ol>
+                <span class="fr col-xs-3">学部新闻</span>
+            </div>
+            <div class="contant_title row">
+                <h2>工学部举办志愿服务学生先进事迹报告会</h2>
+                <span>发布时间：<i>2021/6/18</i></span><span>阅读次数：<i>100</i><i class="glyphicon glyphicon-fire hot"></i></span>
+            </div>
+            <div class="contant_main row">
+                <div class="pic row"><img src="./updata/new_cont1_1.jpg" alt=""></div>
+                <p class="para">为宣传当代青年志愿服务学生先进事迹，提升当代青年大学生积极奉献精神。近日，工学部团委举办了“青春榜样，与爱同行”志愿服务学生先进事迹报告会，五位志愿者分享自己志愿者服务的故事。</p>
+                <div class="pic"><img src="./updata/news_cont_2.jpg" alt=""></div>
+                <p class="para">2019级工程造价专业学生周鸿泽谈了自己在疫情期间参加的社区各种“防疫”志愿活动感受。他说，作为一名大学生，我们要积极投身社区建设，加强社区防疫设施的完善，更要积极参加社会志愿服务。因为在志愿者活动中，收获的不只是劳累与汗水，更是自身价值的提升。</p>
+                <p class="pic"><img src="./updata/new_cont1_3.jpg" alt=""></p>
+                <p class="para">2019级城乡规划专业学生赵美婷讲述了在小学时自己与同学帮助一位残疾孩子的故事。当时她就思考：残疾的孩子为什么不能被公平对待？并立下帮助他人，为社会做贡献的目标。在汶川地震中，她帮忙照顾流离失所的老人与小孩。她说，当一名志愿者，不能想着让社会给我们带来什么，而要想着把什么带给社会上需要帮助的人。</p>
+                <!-- <span class="digital">123</span>
+                <span class="english">english</span> -->
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer clearfix ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-2 logo hidden-xs ">
+                    <a href="https://www.hhstu.edu.cn/ "><img src="./img/logo1.png " alt=" "></a>
+                </div>
+
+                <div class="col-md-2 logo hidden-xs ">
+                    <a href="https://www2.hhstu.edu.cn/gxb/ "><img src="./img/logo2.png " alt=" "></a>
+                </div>
+
+                <div class="col-md-3 contact ">
+                    <p>地址：郑州市紫荆山南路666号(南校区)</p>
+                    <p>校区：黄河科技学院南校区</p>
+                    <p>电话：xxxxxxxxx</p>
+                    <p>邮箱：xxxxxxxxx</p>
+                </div>
+                <div class="col-md-4 footer-link hidden-xs ">
+                    <p class=" ">站内导航&nbsp&nbsp:</p>
+                    <select name="pets " id="pet-select ">
+                    <option value=" ">院内其他网址</option>
+                    <option value=" ">Dog</option>
+                    <option value="cat ">Cat</option>
+                    <option value="hamster ">Hamster</option>
+                    <option value="parrot ">Parrot</option>
+                    <option value="spider ">Spider</option>
+                    <option value="goldfish ">Goldfish</option>
+                </select>
+
+                    <select name="pets " id="pet-select ">
+                    <option value=" ">校内其他地址</option>
+                    <option value="dog ">Dog</option>
+                    <option value="cat ">Cat</option>
+                    <option value="hamster ">Hamster</option>
+                    <option value="parrot ">Parrot</option>
+                    <option value="spider ">Spider</option>
+                    <option value="goldfish ">Goldfish</option>
+                </select>
+
+                </div>
+                <div class="col-md-1 social ">
+                    <h3>关注我们</h3>
+                    <ul class="row ">
+                        <span> <li class="col-xs-3 ">微信: </li><img src="./updata/ma.jpg " alt=" " class="col-xs-3"></span>
+                        <span> <li class="col-xs-3 ">微博: </li><img src="./updata/ma.jpg " alt=" " class="col-xs-3"></span>
+                        <span> <li class="col-xs-3 ">QQ:</li><img src="./updata/ma.jpg " alt=" " class="col-xs-3"></span>
+                        <span> <li class="col-xs-3 ">邮箱:</li><img src="./updata/ma.jpg " alt=" " class="col-xs-3"></span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer_bottom ">
+        <div class="container ">
+            <p class="text-center ">Copyright © 黄河科技学院工学部 2019至今</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

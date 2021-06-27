@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS综合界面</title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				text-decoration: none;
+			}
+			/*评测中心*/
+			.text{
+				width:100% ;
+			}
+			.text ul li{
+				width: 212px;
+				height: 212px;
+				/*border: 1px solid black;*/
+				position: relative;
+				float: left;
+				margin-left: 20px;
+			}
+			.text ul li img{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				/*border: 1px solid black;*/
+				-webkit-transform: translate(-50%,-50%);
+				-webkit-transition: ease 1s all;
+			}
+			.text ul li .jia{
+				opacity: 0;
+			}
+			.text ul li:hover .tu{
+				opacity: 0;
+			}
+			.text ul li:hover .jia{
+				opacity: 1;
+				-webkit-transform: translate(-50%,-50%) scale(0.8);
+			}
+			.text ul{
+				width: 960px;
+				margin: 40px auto;
+			}
+			.text header{
+				text-align: center;
+				
+			}
+			.text{
+				width: 100%;
+			 	height: 750px;
+			}
+			.text  .zt{
+				font-family:"宋体";
+				font-size: 18px;
+				text-align: center;
+				color: crimson;
+			}
+		  .clear{
+		  	clear: both;
+		  }
+		  /*尝试*/
+		  .try  ul{
+		  	width: 960px;
+		  	margin: 40px auto;
+		  }
+		  .try{
+		  	width: 100%;
+		  	height: 500px;
+		  	position: relative;
+		  }
+		  .try ul li{
+		  	width: 291px;
+		  	height: 251px;
+		  	position: relative;
+		  	float: left;
+		  	perspective: 230px;
+		  	margin-left: 20px;
+		  }
+		  .try ul li img{
+		  	position: absolute;
+		  	left: 0px;
+		  	top: 0px;
+		  	-webkit-backface-visibility: hidden;
+		  	-webkit-transition: ease 1s all;
+		  }
+		  .try ul li .zheng{
+		  	-webkit-transform: rotateX(-180deg);
+		  }
+		  .try ul li:hover .zheng{
+		  	-webkit-transform: rotateX(0deg);
+		  }
+		  .try ul li:hover .fan{
+		  	-webkit-transform: rotateX(180deg);
+		  }
+		  .try header{
+		  	text-align:center;
+		  }
+		  .try .zt{
+				font-family:"宋体";
+				font-size: 18px;
+				text-align: center;
+				color: crimson;
+			}
+			/*最新单品*/
+			.new ul li{
+				width: 266px;
+				height: 250px;
+				float: left;
+				position: relative;
+				overflow: hidden;
+				margin-left: 30px;
+			}
+			.new ul li .up{
+				width: 266px;
+				height: 250px;
+				background-color: rgba(0,0,0,0.5);
+				position: absolute;
+				left: 0px;
+				top: -250px;
+				-webkit-transition: ease 1s all;
+				
+			}
+			.new ul li:hover .up{
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			.new ul li .up p{
+				line-height: 50px;
+				text-align: center;
+				color: white;
+			}
+			.new ul li .up p:nth-of-type(1){
+				font-size: 22px;
+				font-weight: 800;
+			}
+			.new header{
+				text-align: center;
+			}
+			.new ul{
+				width: 960px;
+				margin: 40px auto;
+			}
+			/*头部样式*/
+			/*bigtop*/
+			.bigtop {
+				width: 100%;
+				height: 40px;
+				background-color: #000000;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 10;
+			}
+			.bigtop .right a{
+				color: #ccc;
+				line-height: 40px;
+				display: inline-block;
+				margin-left: 15px;
+			}
+			.bigtop .right a:hover{
+				color: white;
+			}
+			/*nav*/
+			.bignav{
+				width: 100%;
+				height: 70px;
+				background-color: rgba(0,0,0,0.2);
+				position: absolute;
+				top: 40px;
+				left: 0px;
+				z-index: 2;
+			}
+			.bignav .left a{
+				/*background-color: #228B22;*/
+				display: inline-block;
+				margin: 20px ;
+				color:white;
+				line-height: 40px;
+			}
+			.bignav .left a:hover{
+				color: #228B22;
+			}
+			.bignav .left span{
+				font-size: 22px;
+				padding: 10px;
+			}
+			.bignav .center input{
+				width: 240px;
+				height: 30px;
+				border-radius: 20px;
+				border: 1px solid seagreen;
+				outline: none;
+				margin-left: 300px;
+				padding-left: 30px;
+				background: url(img/top/search.png) no-repeat 3px 3px;	
+			}
+			.bignav .nav{
+				line-height: 70px;
+			}
+			.bignav .right a{
+				width: 32px;
+				height: 32px;
+				display: inline-block;
+				text-align: center;
+				line-height: 32px;
+				border-radius: 50% ;
+				box-shadow: 0 0 0 1px #fff inset;
+				transition: all 1s ease;
+			}
+			.bignav .right a:hover{
+					box-shadow: 0 0 0 16px #fff inset;
+			}
+			/*pic*/
+			.pic{
+				width: 570px;
+				height: 210px;
+				position: absolute;
+			    left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				z-index: 2;
+			}
+			.pic p{
+				font-size: 14px;
+				color:#228B22;
+			}
+			.pic ul{
+				position: relative;
+				
+		        text-align: center;
+			}
+			.pic ul li{
+				width: 180px;
+				height: 40px;
+				/*background-color: #DC143C;*/
+				display: block;
+				border-radius: 20px;
+				line-height: 40px;
+				margin-top: 20px;
+				-webkit-transition:all 1s ease;
+				opacity: 1;
+			}
+			.pic ul .one{
+				position: absolute;
+				left: -400px;
+				right: 40px;
+				color: white;
+			}
+			.pic ul .two{
+				position: absolute;
+				left: 700px;
+				right: 40px;
+				color: white;
+			}
+			body:hover .pic ul .one{
+				position: absolute;
+				left: 0px;
+				right: 40px;
+			}
+			body:hover .pic ul .two{
+				position: absolute;
+				left: 400px;
+				right: 40px;
+			}
+			.pic ul li span{
+				height: 36px;
+				width: 36px;
+				display: inline-block;
+				border-radius: 50%;	
+				border: 1px solid #ccc;
+				line-height: 36px;
+				box-shadow: 0 0 1px royalblue inset;
+			}
+			.pic ul li span:hover{
+				box-shadow: 0 0 0 18px royalblue inset;
+			}
+		/*大盒子*/
+			.box {
+				width: 100%;
+				height: 680px;
+				position: relative;
+				overflow: hidden; 
+				border: 1px solid forestgreen ;
+			}
+			/*音频和视频*/
+			.box video{
+				position: absolute;
+				width: 100%;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				z-index: 1;
+			}
+			.box audio{
+				width: 10px;
+				height: 10px;
+				z-index: 3;
+				top: 610px;
+				right: 60px;
+				position: absolute;}
+				/*display: inline-block;*/
+			/*	color: #2E8B57;}*/
+			/*通用样式*/
+			.w1000{
+				width: 1000px;
+				margin: auto;
+				
+			}
+			.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+			/*侧边条*/
+		    .aside{
+				width: 40px;
+				height: 400px;
+				background-color: rgba(0 0 255 0.1);
+				position: fixed;
+				right: 50px;
+				bottom: 220px;
+				z-index: 4;	
+			}
+				.aside a{
+				width: 40px;
+				height: 80px;
+				display: block;
+				color: #008000;
+				font-size: 15px;
+				font-family: "宋体";
+				border: 1px solid aquamarine;
+				text-align: center;
+				line-height: 40px;
+				border-radius: 20px;
+				background-color: silver;
+				margin-bottom: 30px;
+			}
+			.aside a:hover{
+				color: aqua;
+			}
+			}
+			.tb-ft{
+				width: 1190px;
+				height: 50px;
+				margin: auto;
+				background-color: aliceblue;
+			}
+			.tb-ft .tb-end{
+				width: 60px;
+				height: 20px;
+				margin: auto;
+				position: relative;
+			}
+			.tb-end:before{
+				content: "";
+				width: 70px;
+				height: 1px;
+				background-color: #000000;
+				display: inline-block;
+				position: absolute;
+				left:-120px;	
+				top: 50%;		
+				}
+				.tb-end:after{
+				content: "";
+				width: 70px;
+				height: 1px;
+				background-color: #000000;
+				display: inline-block;
+				position: absolute;
+				right: -100px;	
+				top: 50%;		
+				}
+				/*留言栏*/
+				.bigfoot{
+					width: 100%;
+					background-color: dimgrey;
+					}
+				.bigfoot .foot{
+					width: 900px;
+					margin: 0 auto;
+					position: relative;
+				}
+				.bigfoot .foot img{
+				
+				margin-left: 330px;
+				 }
+				 .bigfoot .form{
+				   border-top: 1px solid white;
+				   padding: 10px;
+				 	
+				 	}
+				 .bigfoot .ft{
+				 	outline: none;
+				 	margin-left: 50px;
+				 	width: 190px;
+				   color: white;
+				 	}	
+				 .bigfoot input{
+				 	width: 150px;	
+				 	outline: none;
+				 	height: 20px;
+				 	border-radius: 20px;
+				 	 margin-top: 20px;
+				 	margin-bottom: 15px;
+				 	 }
+				 	 .zhu{
+				 	 	width: 100%;
+				 	 	height: 30px;
+				 	 	font-size: 16px;
+				 	 	line-height: 30px;
+				 	 	color: white;
+				 	 	text-align: center;
+				 	 	background-color: dimgrey;
+				 	 	margin-top: 1px;
+				 	 	}
+				 	 	.bigfoot #jin{
+				 	 		position: absolute;
+				 	 		bottom: -170px;
+				 	 		right: 1px;
+				 	 	}
+    	</style>
+		<link rel="stylesheet" type="text/css" href="css/ux_1446629159_9522004/iconfont.css"/>
+	</head>
+	<body>	
+		<!--侧边条-->
+		<div class="aside">
+			<a href="#new">最新单品</a>
+			<a href="#try">我要试装</a>
+			<a href="#test">评测中心</a>
+			<a href="#top">回到顶部</a>
+		</div>
+		<!--主界面-->
+        <div class="box" id="top">
+			<!--bigtop-->
+		<div class="bigtop ">
+			<div class="top w1000">
+				<div class="left fl"><img src="img/top/logo.png"/></div>
+				<div class="right fr">
+					<a href="register.html">登录</a>
+					<a href="#">注册</a>
+				</div>
+			</div>
+		</div>
+		<!--bignav-->
+		<div class="bignav">
+			<div class="nav w1000">
+				<div class="left fl">
+					<a href="">
+						<img src="img/top/sanxian.png" alt="" />
+						<span id="">
+							选项
+						</span>
+						<img style="margin-bottom: 5px" src="img/top/sanjiao.png" alt="" />
+					</a>
+				</div>
+				<div class="center fl">
+					<form action="" method="post">
+					<input type="search"name=""id=""value=""placeholder="请输入商品名称 品牌或者编号" />
+					</form>
+				</div>
+				<div class="right fr">
+					<a href=""><span class="iconfont">&#Xf012a;</span></a>
+					<a href=""><span class="iconfont">&#Xe68e</span></a>
+					<a href=""><span class="iconfont">&#Xe65e</span></a>
+					<a href=""><span class="iconfont">&#Xe608</span></a>
+				</div>
+			</div>
+		</div>	
+		<!--pic-->
+		<div class="pic">
+			<img src="img/top/wenzi.png" alt="" />
+			<p>select the right resolution for your PC and diven in !(请为你的电脑选择正确的分辨率)</p>
+			<ul>
+				<a href="#"><li class="one"><span class="iconfont">
+					&#Xe62c;
+				</span>STANDARD标准</li></a>
+				<a href="#"><li class="two"><span class="iconfont">
+					&#Xe62c;
+				</span>HD高清</li></a>
+			</ul>
+		</div>
+		<!--音频和视频-->
+		<video src="video/home_loop_720p.mp4"  autoplay="autoplay" loop="loop" ></video>
+		<audio src="audio/home.ogg" autoplay="autoplay" loop="loop"controls="controls"></audio>
+		</div>
+		</div>
+		<!--新品-->
+		<div class="new"id="new">
+			<header>
+				<img src="img/new/new.jpg" alt="" />
+				<p>补水保湿 提亮肤色 低敏配方 收缩毛孔 涵养容颜</p>
+			</header>
+			<ul>
+				<li>
+					<img src="img/new/pic1.jpg" />
+					<div class="up">
+						<p>fresh skin 薏仁水</p>
+						<p>化妆水、爽肤水单品</p>
+						<p><img src="img/new/jiantou.png"/></p>
+						<p><img src="img/new/anniu.png"/></p>
+					</div>
+				</li>
+				<li>
+					<img src="img/new/pic2.jpg" alt="" />
+					<div class="up">
+						<p>fresh skin 薏仁水</p>
+						<p>化妆水、爽肤水单品</p>
+						<p><img src="img/new/jiantou.png"/></p>
+						<p><img src="img/new/anniu.png"/></p>
+					</div>
+				</li>
+				<li>
+					<img src="img/new/pic3.jpg" alt="" />
+					<div class="up">
+						<p>fresh skin 薏仁水</p>
+						<p>化妆水、爽肤水单品</p>
+						<p><img src="img/new/jiantou.png"/></p>
+						<p><img src="img/new/anniu.png"/></p>
+					</div>
+				</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+		<!--试装-->
+        <div class="try"id="try">
+			<header>
+				<img src="img/try/shizhuang.jpg"/>
+				<p class="zt">美化美容 增添个性 突出自信</p>
+			</header>
+			<ul>
+				<li><img src="img/try/try1.jpg" alt="" class="fan"/><img src="img/try/try4.jpg" class="zheng"/></li>
+				<li><img src="img/try/try2.jpg" alt="" class="fan"/><img src="img/try/try5.jpg" class="zheng"/></li>
+				<li><img src="img/try/try3.jpg" alt="" class="fan"/><img src="img/try/try6.jpg" class="zheng"/></li>
+			<div class="clear"></div>
+</ul>
+		</div>
+		<!--评测-->
+		<div class="text"id="test">
+			<header>
+				<img src="img/test/cp.jpg" class="tou"/>
+				<p class="zt">评测 我们更专业 用户更放心</p>
+			</header>
+			<ul>
+				<li><img src="img/test/cp1.jpg" alt="" class="tu"/><img src="img/test/th1.png" class="jia"/></li>
+				<li><img src="img/test/cp2.jpg" alt="" class="tu"/><img src="img/test/th2.png" class="jia"/></li>
+				<li><img src="img/test/cp3.jpg" alt="" class="tu"/><img src="img/test/th3.png" class="jia"/></li>
+				<li><img src="img/test/cp4.jpg" alt="" class="tu"/><img src="img/test/th4.png" class="jia"/></li>
+				<li><img src="img/test/cp5.jpg" alt="" class="tu"/><img src="img/test/th5.png" class="jia"/></li>
+				<li><img src="img/test/cp6.jpg" alt="" class="tu"/><img src="img/test/th6.png" class="jia"/></li>
+				<li><img src="img/test/cp7.jpg" alt="" class="tu"/><img src="img/test/th7.png" class="jia"/></li>
+				<li><img src="img/test/cp8.jpg" alt="" class="tu"/><img src="img/test/th8.png" class="jia"/></li>
+			<div class="clear"></div>
+			</ul>
+		</div>
+	<!--底部-->
+	<div class="bigfoot">
+		<div class="foot">
+			<img  src="img/top/logo1.jpg"  alt="" />
+			<div class="form">
+			<div class="fl ft">
+				<p>姓名：</p>
+				<input type="text" name="" id="" value="" placeholder="请输入姓名："/>
+				<p>邮箱：</p>
+				<input type="text" name="" id="" value="" placeholder="请输入电话："/>
+				<a href="#"><img src="img/top/but.jpg"/></a>
+			</div>
+			<div class="fl ft">
+				<p>邮箱：</p>
+				<input type="text" name="" id="" value="" placeholder="请输入邮箱："/>
+				<p>密码：</p>
+				<input type="text" name="" id="" value="" placeholder="请输入密码："/>
+			</div>
+			<div class="fl ft">
+				<p>留言：</p>
+				<textarea name="advice" rows="10" cols="30"></textarea>
+				<img id="jin" src="img/top/but.png"/>
+			</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="zhu">© 版权归属于信息工程学院物联网工程张浩<em>学号:1801141085</em></div>
+	<div class="tb-ft">
+			<div class="tb-end">  END</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>tianmao</title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			.boxmain{
+				width: 1000px;
+				height: 520px;
+				position: relative;
+				background-image: url(nine/img/1.webp);
+			}
+			.boxmain img{
+				width: 1000px;
+				height: 520px;
+			}
+			.boxmain .boxtitle{
+				position: absolute;
+				bottom: 30px;
+				left: 400px;
+			}
+			.boxmain .boxtitle li a{
+				width: 50px;
+				height: 5px;
+				display: inline-block;
+				background-color: darkgray;
+			}
+			.boxmain .boxtitle li a:hover{
+				background-color: lightgray;
+			}
+			.boxmain .boxtitle li{
+			    display: inline-block;
+			}
+			.boxmain .boximage{
+				display: none;
+			}
+			.boxmain .boximage:target{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="boxmain">
+				<div class="boxtitle">
+					<ul>
+						<li><a href="#boximage1"></a></li>
+						<li><a href="#boximage2"></a></li>
+						<li><a href="#boximage3"></a></li>
+						<li><a href="#boximage4"></a></li>
+					    <li><a href="#boximage3"></a></li>
+						<li><a href="#boximage4"></a></li>
+						
+					</ul>
+				</div>
+				<div class="boximage" id="boximage1" ><img src="nine/img/1.webp" alt="" /></div>
+				<div class="boximage" id="boximage2" ><img src="nine/img/2.jpg" alt="" /></div>
+				<div class="boximage" id="boximage3"><img src="nine/img/3.jpg" alt="" /></div>
+				<div class="boximage" id="boximage4"><img src="nine/img/4.webp" alt="" /></div>
+				<div class="boximage" id="boximage5"><img src="nine/img/5.jpg" alt="" /></div>
+				<div class="boximage" id="boximage6"><img src="nine/img/6.webp" alt="" /></div>
+			</div>
+	</body>
+</html>
