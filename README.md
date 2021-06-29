@@ -3,9 +3,9 @@
  这个是本人在自学前端写的demo和自己写的一些网站
 git的初体验
 
-#### 这是通过一个index.html可以进入每一个界面
+#### 这是通过index.html可以进入每一个界面
 
-这里主要用了h5,css,js.在写响应式界面的时候用了bootstrap框架
+这里主要用了h5,css,js.less,在写响应式界面的时候用了bootstrap框架
 
 
 #### 安装教程
